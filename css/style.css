@@ -80,8 +80,283 @@ body {
   min-height: 100%;
   line-height: 1;
   font-size: 24px;
-  font-family: Roboto Condensed;
-  display: flex;
+  font-family: Montserrat, sans-serif;
+   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f5f5f5; 
 }
+/* 
+ .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}  */
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ece3da;
+}
+/*--------------------------------Шапка-----------------------------------------------*/
+
+.header {
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__nav-inner {
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav__link {
+  display: inline-block;
+  margin: 25px 70px;
+  color: black;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+.header__nav__link:hover {
+transform: scale(1.15);
+font-weight: 500;
+}
+
+/*-----------------------------Верстка левой колонки------------------------------------------------*/
+
+.main__flex {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.left-column {
+  padding-left: 50px;
+  max-width: 500px;
+  margin-right: 170px;
+}
+.left-column__img {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.left-column__img__item {
+  border-radius: 50%;
+}
+.info {
+}
+.contacts {
+}
+.contacts__title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 20px;
+  background-color: #d0c1a9;
+  border-radius: 50px;
+}
+.info__inner {
+  margin-left:70px;
+}
+.github__item {
+  margin: 30px 40px;
+}
+.github__link {
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  position: relative;
+}
+.github__link:before {
+  content: "";
+  background-image:url(../assets/svg/icon\ github.svg);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: -45px;
+}
+.gmail__item {
+  margin: 30px 40px;
+}
+.gmail__link {
+  display: inline-block;
+  color: black;
+  position: relative;
+  font-size: 30px;
+}
+.gmail__link:before {
+  content: "";
+  background-image:url(../assets/svg/icon\ gmail.svg);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: -45px;
+} 
+.tel__item {
+  margin: 30px 40px;
+}
+.tel__link {
+  font-size: 30px;
+  position: relative;
+}
+.tel__link:before {
+  content: "";
+  background-image:url(../assets/svg/icon\ tel.svg);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -7px;
+  left: -45px;
+}
+.location__item {
+  margin: 30px 40px;
+}
+.location__link {
+  font-size: 30px;
+  position: relative;
+}
+.location__link:before {
+  content: "";
+  background-image:url(../assets/svg/icon\ location.svg);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: -45px;
+}
+
+.skills {
+}
+.skills__title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 20px;
+  background-color: #d0c1a9;
+  border-radius: 50px;
+}
+
+.skills__item {
+  margin: 30px 85px;
+  list-style-type: disc;
+}
+.skills__link {
+  font-size: 30px;
+}
+.languages {
+}
+.languages__title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 20px;
+  background-color: #d0c1a9;
+  border-radius: 50px;
+}
+
+.languages__item {
+  margin: 30px 85px;
+  list-style-type: disc;
+}
+.languages__link {
+  font-size: 30px;
+}
+/*---------------------------Верстка правой колонки-------------------------------------------*/
+.right-clmn {
+  max-width: 900px;
+}
+.right-clmn__title {
+  max-width: 600px;
+  margin: 0 189px;
+  padding: 120px 0px;
+}
+.name {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2;
+}
+.line {
+  width: 300px;
+  height: 6px;
+  background-color: #000000;
+  margin: 0 auto;
+}
+.developer {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2;
+}
+.right-clmn__subtitle {
+  max-width: 805px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.right-clmn__subtitle-item {
+  line-height: 1.5;
+  font-size: 30px;
+}
+.edication {
+  padding-top: 100px;
+}
+.education__title {
+  font-weight: 500;
+  font-size: 30px;
+  border-bottom: 4px solid black;
+  width: 800px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.education__title:before {
+  background-image: url(../assets/svg/icon\ education.svg);
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -40px;
+}
+.education__info {
+  line-height: 1.75;
+  font-size: 27px;
+}
+.courses {
+  padding-top: 100px;
+}
+.courses__title {
+  font-weight: 500;
+  font-size: 30px;
+  border-bottom: 4px solid black;
+  width: 800px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.courses__title::before {
+  background-image: url(../assets/svg/icon\ courses.svg);
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -40px;
+}
+.courses__inner {
+  list-style: disc;
+}
+.courses__item {
+  line-height: 1.75;
+  font-size: 27px;
+}
+
+
