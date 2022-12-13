@@ -1,2 +1,2 @@
-https://Vladosichek777.github.io/rsschool-cv/cv
-https://Vladosichek777.github.io/rsschool-cv/
+https://vladosichek777.github.io/rsschool-cv/cv
+https://vladosichek777.github.io/rsschool-cv/
