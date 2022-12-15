@@ -31,8 +31,8 @@ aside {
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -128,7 +128,7 @@ body {
 
 .header__nav__link {
   display: inline-block;
-  padding: 25px 70px;
+  line-height: 3;
   color: black;
   font-size: 30px;
   transition: all 0.3s;
@@ -140,12 +140,51 @@ body {
   font-weight: 500;
 }
 
+@media(max-width:1600px) {
+  .header__nav__link {
+    width: 220px;
+  }
+}
+
+@media(max-width:930px) {
+  .header__nav__link {
+    width: 180px;
+  }
+}
+
+@media(max-width:750px) {
+  .header__nav__link {
+    font-size: 25px;
+    width: 150px;
+  }
+
+  .header__nav {
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:630px) {
+  .header__nav-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__nav {
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .wrapper {
+    min-width: 100%;
+  }
+}
+
 /*-----------------------------Верстка левой колонки------------------------------------------------*/
 
 .main__flex {
   display: flex;
   justify-content: space-between;
-
 }
 
 .left-column {
@@ -295,6 +334,84 @@ body {
   font-size: 30px;
 }
 
+@media(max-width:1400px) {
+  .left-column {
+    margin-right: 50px;
+    padding-left: 0;
+  }
+}
+
+@media(max-width:1150px) {
+  .main__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column {
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media(max-width:520px) {
+  .left-column__img__item {
+    width: 200px;
+  }
+
+  .info__inner {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .gmail__link,
+  .github__link,
+  .tel__link,
+  .location__link {
+    font-size: 18px;
+  }
+
+  .skills__title {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .skills__inner {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .skills__item {
+    margin: 30px 20px;
+  }
+
+  .skills__link {
+    font-size: 18px;
+  }
+
+  .languages__title {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .languages__inner {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .languages__item {
+    margin: 30px 20px;
+  }
+
+  .languages__link {
+    font-size: 18px;
+  }
+}
+
 /*---------------------------Верстка правой колонки-------------------------------------------*/
 .right-clmn {
   max-width: 900px;
@@ -302,7 +419,7 @@ body {
 
 .right-clmn__title {
   max-width: 600px;
-  margin: 0 189px;
+  margin: 0 auto;
   padding: 120px 0px;
 }
 
@@ -346,7 +463,6 @@ body {
   font-weight: 500;
   font-size: 30px;
   border-bottom: 4px solid black;
-  width: 800px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -374,7 +490,6 @@ body {
   font-weight: 500;
   font-size: 30px;
   border-bottom: 4px solid black;
-  width: 800px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -406,7 +521,6 @@ body {
   font-weight: 500;
   font-size: 30px;
   border-bottom: 4px solid black;
-  width: 800px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -435,6 +549,116 @@ body {
 #picture3 {
   display: flex;
   justify-content: center;
+}
+
+@media(max-width:1550px) {
+  .projects__img {
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  .projects__img__item {
+    width: 80%;
+    height: 40%;
+  }
+
+  #picture3 {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media(max-width:1150px) {
+  .education__title {
+    padding-left: 50px;
+  }
+
+  .education__title:before {
+    left: 0px;
+  }
+
+  .courses__title {
+    padding-left: 50px;
+  }
+
+  .courses__inner {
+    margin-left: 30px;
+  }
+
+  .courses__title::before {
+    left: 0px;
+  }
+
+  .projects__title {
+    padding-left: 50px;
+  }
+
+  .projects__title:before {
+    left: 0px;
+  }
+
+  .projects__img {
+    text-align: center;
+  }
+
+  #picture3 {
+    display: block;
+
+  }
+}
+
+@media(max-width:520px) {
+  .name {
+    font-size: 32px;
+  }
+
+  .developer {
+    font-size: 30px;
+  }
+
+  .right-clmn__title {
+    padding: 130px 0 30px 0;
+  }
+
+  .right-clmn__subtitle-item {
+    font-size: 20px;
+  }
+
+  .education__title {
+    font-size: 22px;
+  }
+
+  .education__title:before {
+    left: 10px;
+    top: -10px;
+  }
+
+  .education__info {
+    font-size: 20px;
+    text-align: start;
+  }
+
+  .courses__title {
+    font-size: 22px;
+  }
+
+  .courses__title::before {
+    top: -10px;
+    left: 10px;
+  }
+
+  .courses__item {
+    font-size: 20px;
+  }
+
+  .projects__title {
+    font-size: 22px;
+  }
+
+  .projects__title:before {
+    top: -10px;
+    left: 10px;
+  }
 }
 
 /*---------------------------Footer--------------------------------------------------------*/
@@ -471,4 +695,54 @@ body {
 .footer__year__item {
   font-size: 35px;
   font-weight: 500;
+}
+
+@media(max-width:800px) {
+  .footer__github__link {
+    font-size: 20px;
+  }
+
+  .footer__year__item {
+    font-size: 20px;
+  }
+
+  .footer__logo__link {
+    width: 100px;
+  }
+}
+
+@media(max-width:560px) {
+  .footer__github__link {
+    margin-left: 40px;
+  }
+
+  .footer__github__link:before {
+    left: -35px
+  }
+
+  .footer__github {
+    flex-grow: 1.5;
+  }
+
+  .footer__year {
+    flex-grow: 1;
+  }
+
+  .footer__logo {
+    flex-grow: 1
+  }
+}
+
+@media(max-width:400px) {
+  .footer__github__link {
+    font-size: 18px;
+  }
+
+  .footer__year__item {
+    font-size: 18px;
+  }
+
+  .footer__logo__link {
+    width: 70px;
+  }
 }
